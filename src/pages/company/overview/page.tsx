@@ -30,40 +30,40 @@ export default function CompanyOverviewPage() {
       <div className="container mx-auto px-4 py-12">
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-teal-600 mb-4">{t('companySummary')}</h2>
-          <p className="text-gray-600">超精密スプリングの専門メーカ</p>
+          <p className="text-gray-600">{t('overview.subtitle')}</p>
         </div>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden mb-12">
           <table className="w-full">
             <tbody>
               <tr className="border-b">
-                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 w-1/4">商号</th>
-                <td className="px-6 py-4 text-gray-700">小松ばね工業株式会社</td>
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 w-1/4">{t('overview.companyName')}</th>
+                <td className="px-6 py-4 text-gray-700">{t('overview.companyNameValue')}</td>
               </tr>
               <tr className="border-b">
-                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">創業年月日</th>
-                <td className="px-6 py-4 text-gray-700">1941年(昭和16年)5月23日</td>
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.foundingDate')}</th>
+                <td className="px-6 py-4 text-gray-700">{t('overview.foundingDateValue')}</td>
               </tr>
               <tr className="border-b">
-                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">会社設立</th>
-                <td className="px-6 py-4 text-gray-700">1952年(昭和27年)12月1日</td>
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.established')}</th>
+                <td className="px-6 py-4 text-gray-700">{t('overview.establishedValue')}</td>
               </tr>
               <tr className="border-b">
-                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">資本</th>
-                <td className="px-6 py-4 text-gray-700">払込資本金 1億円</td>
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.capital')}</th>
+                <td className="px-6 py-4 text-gray-700">{t('overview.capitalValue')}</td>
               </tr>
               <tr className="border-b">
-                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">本社</th>
-                <td className="px-6 py-4 text-gray-700">東京都大田区大森南5丁目3番18号</td>
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.headquarters')}</th>
+                <td className="px-6 py-4 text-gray-700">{t('overview.headquartersValue')}</td>
               </tr>
               <tr className="border-b">
-                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">代表取締役社長</th>
-                <td className="px-6 py-4 text-gray-700">小松 万希子</td>
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.president')}</th>
+                <td className="px-6 py-4 text-gray-700">{t('overview.presidentValue')}</td>
               </tr>
               <tr>
-                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">製造品目</th>
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.products')}</th>
                 <td className="px-6 py-4 text-gray-700">
-                  あらゆる分野で使用される精密線ばね:コイルばね(圧縮、引張)、トーションばね、ワイヤフォーミング加工
+                  {t('overview.productsValue')}
                 </td>
               </tr>
             </tbody>
@@ -72,30 +72,30 @@ export default function CompanyOverviewPage() {
 
         <div className="mb-12">
           <h2 className="text-3xl font-bold text-teal-600 mb-4">{t('equipment')}</h2>
-          <p className="text-gray-600 mb-8">少量から1000万個単位の注文に対応</p>
+          <p className="text-gray-600 mb-8">{t('overview.equipmentSubtitle')}</p>
 
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <table className="w-full">
               <tbody>
                 <tr className="border-b">
-                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 w-2/3">スプリング自動成型機</th>
-                  <td className="px-6 py-4 text-gray-700 text-right">475台</td>
+                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 w-2/3">{t('overview.springMachine')}</th>
+                  <td className="px-6 py-4 text-gray-700 text-right">{t('overview.springMachineValue')}</td>
                 </tr>
                 <tr className="border-b">
-                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">熱処理炉及び洗浄機</th>
-                  <td className="px-6 py-4 text-gray-700 text-right">33台</td>
+                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.heatTreatment')}</th>
+                  <td className="px-6 py-4 text-gray-700 text-right">{t('overview.heatTreatmentValue')}</td>
                 </tr>
                 <tr className="border-b">
-                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">ばね端面研磨機</th>
-                  <td className="px-6 py-4 text-gray-700 text-right">15台</td>
+                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.grindingMachine')}</th>
+                  <td className="px-6 py-4 text-gray-700 text-right">{t('overview.grindingMachineValue')}</td>
                 </tr>
                 <tr className="border-b">
-                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">検査器具</th>
-                  <td className="px-6 py-4 text-gray-700 text-right">60台</td>
+                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.inspectionEquipment')}</th>
+                  <td className="px-6 py-4 text-gray-700 text-right">{t('overview.inspectionEquipmentValue')}</td>
                 </tr>
                 <tr>
-                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">工作機械</th>
-                  <td className="px-6 py-4 text-gray-700 text-right">15台</td>
+                  <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700">{t('overview.machineTools')}</th>
+                  <td className="px-6 py-4 text-gray-700 text-right">{t('overview.machineToolsValue')}</td>
                 </tr>
               </tbody>
             </table>
