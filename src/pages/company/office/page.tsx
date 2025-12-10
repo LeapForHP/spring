@@ -31,25 +31,26 @@ export default function OfficePage() {
       {/* Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-teal-600 mb-4">{t('office')}</h2>
+          <h2 className="text-3xl font-bold text-teal-600 mb-4">{t('office.title')}</h2>
+          <p className="text-gray-600">{t('office.subtitle')}</p>
         </div>
 
         <div className="bg-green-50/50 rounded-lg p-8 mb-8">
           {/* 本社/第一工場 & 東京第三工場 */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="space-y-4">
-              <h3 className="font-bold text-lg text-gray-800">本社/第一工場</h3>
+              <h3 className="font-bold text-lg text-gray-800">{t('office.tokyoTitle')}</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                〒143-0013 東京都大田区大森南5丁目3番18号<br />
-                電話:03-3743-0231<br />
-                FAX:03-3743-0235<br />
+                {t('office.tokyoAddress')}<br />
+                {t('office.tokyoTel')}<br />
+                {t('office.tokyoFax')}<br />
                 <a href="https://www.komatsubane.com/pdf/honsha-map.pdf" target="_blank" rel="noopener noreferrer" className="text-teal-600 hover:underline">
                   地図はこちら(PDFファイル)
                 </a>
               </p>
             </div>
             <div>
-              <img src="https://www.komatsubane.com/img/03_img03.png" alt="本社/第一工場" className="w-full rounded-lg shadow-md" />
+              <img src="https://www.komatsubane.com/img/03_img03.png" alt={t('office.tokyoTitle')} className="w-full rounded-lg shadow-md" />
             </div>
             <div className="row-span-2">
               <iframe 
@@ -65,9 +66,9 @@ export default function OfficePage() {
             <div className="space-y-4">
               <h3 className="font-bold text-lg text-gray-800">東京第三工場</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                〒143-0013 東京都大田区大森南5丁目3番18号<br />
-                電話:03-3743-0231<br />
-                FAX:03-3743-0235
+                {t('office.tokyoAddress')}<br />
+                {t('office.tokyoTel')}<br />
+                {t('office.tokyoFax')}
               </p>
             </div>
             <div>
@@ -77,7 +78,7 @@ export default function OfficePage() {
 
           {/* アクセス */}
           <div className="bg-white rounded-lg p-6 mb-12">
-            <h3 className="text-xl font-bold text-teal-600 mb-6 text-center">アクセス</h3>
+            <h3 className="text-xl font-bold text-teal-600 mb-6 text-center">{t('office.tokyoAccess')}</h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
@@ -111,25 +112,26 @@ export default function OfficePage() {
                 </div>
               </div>
             </div>
+            <p className="text-sm text-gray-600 mt-4">{t('office.tokyoAccessDetail')}</p>
           </div>
 
           {/* 大河原工場 */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="space-y-4">
-              <h3 className="font-bold text-lg text-gray-800">大河原工場</h3>
+              <h3 className="font-bold text-lg text-gray-800">{t('office.ogawaraTitle')}</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                〒989-1214 宮城県柴田郡大河原町字甲子町1-1<br />
-                (おおがわらまち あざ きのいねちょう)<br />
-                電話:0224-51-5100<br />
-                FAX:0224-51-5113
+                {t('office.ogawaraAddress')}<br />
+                {t('office.ogawaraTel')}<br />
+                {t('office.ogawaraFax')}<br />
+                <span className="text-xs">{t('office.ogawaraAccessDetail')}</span>
               </p>
             </div>
             <div>
-              <img src="https://www.komatsubane.com/img/03_img06.png" alt="大河原工場" className="w-full rounded-lg shadow-md" />
+              <img src="https://www.komatsubane.com/img/03_img06.png" alt={t('office.ogawaraTitle')} className="w-full rounded-lg shadow-md" />
             </div>
             <div>
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12568.540419937606!2d140.72810380386372!3d38.04393817961167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a3fdddb004207%3A0x49ac7b627b1b1bd9!2z44CSOTg5LTEyMTQg5a6u5Z-O55yM5p-055Sw6YOh5aSn5rKz5Y6f55S655Sy5a2Q55S677yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1648440820226!5m2!1sja!2sjp" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12568.540419937606!2d140.72810380386372!3d38.04393817961167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8a3fdddb004207%3A0x49ac7b627b1b1bd9!2z44CSOTg5LTEyMTQg5a6u5Z-O55yM5p-055Sw6YOh5aSn5rKz5Y6f55S655Sm5a2Q55S677yR4oiS77yR!5e0!3m2!1sja!2sjp!4v1648440820226!5m2!1sja!2sjp" 
                 width="100%" 
                 height="210" 
                 style={{ border: 0 }} 
@@ -143,15 +145,16 @@ export default function OfficePage() {
           {/* 秋田太田町工場 */}
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="space-y-4">
-              <h3 className="font-bold text-lg text-gray-800">秋田太田町工場</h3>
+              <h3 className="font-bold text-lg text-gray-800">{t('office.akitaTitle')}</h3>
               <p className="text-gray-700 text-sm leading-relaxed">
-                〒019-1611 秋田県大仙市太田町斉内字北開182-4<br />
-                電話:0187-88-2101<br />
-                FAX:0187-88-2103
+                {t('office.akitaAddress')}<br />
+                {t('office.akitaTel')}<br />
+                {t('office.akitaFax')}<br />
+                <span className="text-xs">{t('office.akitaAccessDetail')}</span>
               </p>
             </div>
             <div>
-              <img src="https://www.komatsubane.com/img/03_img07.png" alt="秋田太田町工場" className="w-full rounded-lg shadow-md" />
+              <img src="https://www.komatsubane.com/img/03_img07.png" alt={t('office.akitaTitle')} className="w-full rounded-lg shadow-md" />
             </div>
             <div>
               <iframe 

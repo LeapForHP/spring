@@ -31,8 +31,8 @@ export default function HistoryPage() {
       {/* Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-teal-600 mb-4">{t('history')}</h2>
-          <p className="text-gray-600">精密機械産業への限りない挑戦</p>
+          <h2 className="text-3xl font-bold text-teal-600 mb-4">{t('history.title')}</h2>
+          <p className="text-gray-600">{t('history.subtitle')}</p>
         </div>
 
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
@@ -40,7 +40,7 @@ export default function HistoryPage() {
             <tbody>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 w-1/5 align-top">1941年(昭和16年)</th>
-                <td className="px-6 py-4 text-gray-700">5月23日 小松 謙一が個人企業として創業。主としてゼンマイ・板ばね・線ばねの製作を始める</td>
+                <td className="px-6 py-4 text-gray-700">{t('history.1941')}</td>
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">1943年(昭和18年)</th>
@@ -52,7 +52,7 @@ export default function HistoryPage() {
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">1952年(昭和27年)</th>
-                <td className="px-6 py-4 text-gray-700">12月27日 生産・販売の増加により法人化して、商号 有限会社小松製作所として発足 カメラシャッタ用精密ばねの生産の比率が著しく増加</td>
+                <td className="px-6 py-4 text-gray-700">{t('history.1952')}</td>
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">1958年(昭和33年)</th>
@@ -88,7 +88,7 @@ export default function HistoryPage() {
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">1976年(昭和51年)</th>
-                <td className="px-6 py-4 text-gray-700">宮城県柴田町に船岡工場新設</td>
+                <td className="px-6 py-4 text-gray-700">{t('history.1965')}</td>
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">1979年(昭和54年)</th>
@@ -108,7 +108,7 @@ export default function HistoryPage() {
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">1989年(平成元年)</th>
-                <td className="px-6 py-4 text-gray-700">秋田県仙北郡(現:大仙市)太田町に秋田太田町工場新設</td>
+                <td className="px-6 py-4 text-gray-700">{t('history.1985')}</td>
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">1992年(平成4年)</th>
@@ -120,7 +120,7 @@ export default function HistoryPage() {
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">2002年(平成14年)</th>
-                <td className="px-6 py-4 text-gray-700">ISO9001:2000認証取得 NoJQA−QM7736</td>
+                <td className="px-6 py-4 text-gray-700">{t('history.2002')}</td>
               </tr>
               <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">2006年(平成18年)</th>
@@ -130,7 +130,7 @@ export default function HistoryPage() {
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">2007年(平成19年)</th>
                 <td className="px-6 py-4 text-gray-700">
                   <ul className="list-disc list-inside space-y-2">
-                    <li>1月エコアクション21認証取得:No.1270(環境省策定)</li>
+                    <li>{t('history.2007')}</li>
                     <li>4月大森税務署より「優良申告法人」表敬を受ける</li>
                     <li>6月資本金減資 1億円</li>
                     <li>7月11日天皇陛下ご視察(本社工場)</li>
@@ -156,6 +156,10 @@ export default function HistoryPage() {
                 </td>
               </tr>
               <tr className="border-b hover:bg-green-50/30">
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">2015年</th>
+                <td className="px-6 py-4 text-gray-700">{t('history.2015')}</td>
+              </tr>
+              <tr className="border-b hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">2017年(平成29年)</th>
                 <td className="px-6 py-4 text-gray-700">
                   <ul className="list-disc list-inside space-y-2">
@@ -172,6 +176,10 @@ export default function HistoryPage() {
               <tr className="hover:bg-green-50/30">
                 <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">2023年(令和5年)</th>
                 <td className="px-6 py-4 text-gray-700">5月 大森税務署より「優良申告法人」表敬を受ける</td>
+              </tr>
+              <tr className="hover:bg-green-50/30">
+                <th className="bg-green-100 text-left px-6 py-4 font-semibold text-gray-700 align-top">{t('history.present')}</th>
+                <td className="px-6 py-4 text-gray-700">{t('history.present')}</td>
               </tr>
             </tbody>
           </table>
