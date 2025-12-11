@@ -37,16 +37,7 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-teal-900/60 to-transparent flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-            <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">{t('common:slogan')}</h2>
-              <p className="text-lg text-white/90">
-                {t('common:companyNameEn')}
-              </p>
-            </div>
-          </div>
-        </div>
+       
       </section>
 
       {/* Products Section */}
