@@ -34,9 +34,18 @@ export const common = {
   registrations: '注册・会员团体',
   japanese: '日本語',
   english: 'English',
-  chinese: '中文',
-  // Features page content
+  chinese: '中文(简体)',
+  chineseTraditional: '中文(繁體)',
+  
+  // Footer translations
+  companyAddress: '〒143-0013 东京都大田区大森南5丁目3番18号',
+  quickLinks: '快速链接',
+  home: '首页',
   featuresTitle: '公司特色',
+  businessHours: '营业时间',
+  businessHoursDetail: '周一至周五 8:30-17:30（周六、周日、节假日休息）',
+  
+  // Features page content
   featuresSubtitle: '我们引以为傲的高品质弹簧，源于精细的构思和彻底的客户至上主义。',
   delicateDesign: '精细的构思',
   delicateDesignDesc: '基于"即使是一个小弹簧，也是构成精密产品心脏部分的重要部件"的理念进行技术开发。',
@@ -97,7 +106,6 @@ export const common = {
   
   // Product detail pages common
   banner: '全部定制生产的精密设备微观科学',
-  home: '首页',
   clickToEnlarge: '点击放大显示',
   manufacturingRecord: '制造实绩',
   characteristics: '特征',
