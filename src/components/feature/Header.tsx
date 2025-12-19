@@ -49,6 +49,16 @@ export default function Header() {
             >
               {t('chinese')}
             </button>
+            <button
+              onClick={() => changeLanguage('zh-TW')}
+              className={`text-sm px-3 py-1 rounded transition-colors ${
+                currentLanguage === 'zh-TW'
+                  ? 'bg-teal-600 text-white font-semibold'
+                  : 'text-gray-600 hover:text-teal-600 hover:bg-gray-200'
+              }`}
+            >
+              {t('chineseTraditional')}
+            </button>
           </div>
         </div>
       </div>

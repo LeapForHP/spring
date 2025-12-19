@@ -1,6 +1,7 @@
 import { common as jaCommon } from './ja/common';
 import { common as enCommon } from './en/common';
 import { common as zhCommon } from './zh/common';
+import { common as zhTWCommon } from './zh-Tw/common';
 
 const resources = {
   ja: {
@@ -11,6 +12,9 @@ const resources = {
   },
   zh: {
     common: zhCommon,
+  },
+  'zh-TW': {
+    common: zhTWCommon,
   },
 };
 
