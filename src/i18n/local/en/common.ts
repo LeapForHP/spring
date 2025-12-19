@@ -6,7 +6,7 @@ export const common = {
   companyProfile: 'Company',
   contact: 'Contact',
   recruit: 'Careers',
-  news: 'News',
+  news: 'News & Updates',
   newsAll: 'View All News',
   torsionSpring: 'Torsion Spring',
   compressionSpring: 'Compression Spring',
