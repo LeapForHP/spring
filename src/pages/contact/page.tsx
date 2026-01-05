@@ -46,7 +46,7 @@ export default function Contact() {
         if (value) formBody.append(key, value);
       });
 
-      const response = await fetch('https://readdy.ai/api/form/d4pl3k3m5ik2goc1ev70', {
+      const response = await fetch('', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -128,7 +128,7 @@ export default function Contact() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} data-readdy-form id="contact-form">
+              <form onSubmit={handleSubmit}  id="contact-form">
                 <div className="space-y-6">
                   {/* Company Name */}
                   <div>
