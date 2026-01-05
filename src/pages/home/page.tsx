@@ -240,11 +240,6 @@ export default function Home() {
 
           <div className="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
             <p>{t('common:copyright')}</p>
-            <p className="mt-2">
-              <a href="https://readdy.ai/?origin=logo" target="_blank" rel="noopener noreferrer" className="hover:text-white cursor-pointer">
-                Website Builder
-              </a>
-            </p>
           </div>
         </div>
       </footer>

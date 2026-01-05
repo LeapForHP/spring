@@ -45,7 +45,7 @@ export default function Recruit() {
         if (value) formBody.append(key, value);
       });
 
-      const response = await fetch('https://readdy.ai/api/form/d4pl3k3m5ik2goc1ev7g', {
+      const response = await fetch('', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
@@ -256,7 +256,7 @@ export default function Recruit() {
                 </div>
               )}
 
-              <form onSubmit={handleSubmit} data-readdy-form id="recruit-form">
+              <form onSubmit={handleSubmit} id="recruit-form">
                 <div className="space-y-6">
                   {/* Full Name */}
                   <div>
