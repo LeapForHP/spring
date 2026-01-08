@@ -6,7 +6,7 @@ import AutoImport from "unplugin-auto-import/vite";
 const isProd = process.env.NODE_ENV === 'production'
 
 // GitHub Pages のプロジェクトページ用 base
-const base = isProd ? '/spring/' : '/'
+const base = '/';
 // https://vite.dev/config/
 export default defineConfig({
   define: {
