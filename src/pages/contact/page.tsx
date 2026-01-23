@@ -41,17 +41,12 @@ export default function Contact() {
     setSubmitStatus(null);
 
     try {
-      const formBody = new URLSearchParams();
-      Object.entries(formData).forEach(([key, value]) => {
-        if (value) formBody.append(key, value);
-      });
-
-      const response = await fetch('', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/json',
         },
-        body: formBody.toString(),
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
@@ -68,6 +63,8 @@ export default function Contact() {
           preferredUnitPrice: '',
         });
       } else {
+        const errorData = await response.json().catch(() => ({}));
+        console.error('Form submission failed:', errorData);
         setSubmitStatus('error');
       }
     } catch (error) {
