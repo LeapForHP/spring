@@ -16,6 +16,8 @@ import CompanyOverviewPage from "../pages/company/overview/page";
 import OfficePage from "../pages/company/office/page";
 import HistoryPage from "../pages/company/history/page";
 import CSRPage from "../pages/company/csr/page";
+import Blog from "../pages/blog/page"; // 作成したファイルをインポート
+import BlogPostPage from "../pages/blog/post";
 
 const routes: RouteObject[] = [
   {
@@ -85,6 +87,14 @@ const routes: RouteObject[] = [
   {
     path: "*",
     element: <NotFound />,
+  },
+  {
+    path: '/blog', // ブラウザでのURL (例: domain.com/blog)
+    element: <Blog />, // 表示するコンポーネント
+  },
+  {
+    path: '/blog/:id',  // :id が数字の部分（1, 2, 3...）になります
+    element: <BlogPostPage />,
   },
 ];
 

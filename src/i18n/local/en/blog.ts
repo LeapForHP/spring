@@ -1,0 +1,16 @@
+export const blog = {
+  title: 'Bane Blog',
+  subtitle: 'Technical insights into springs and daily updates from Komatsu Spring Industrial.',
+  recommended: 'Featured Posts',
+  latest: 'Latest Posts',
+  popularRanking: 'Popular Posts',
+  categories: 'Categories',
+  searchPlaceholder: 'Search keywords...',
+  noResults: 'No posts found.',
+  share: 'Share this article',
+  backToList: 'Back to blog list',
+  readMore: 'Read more',
+  contactTitle: 'Contact Us',
+  contactDesc: 'Please feel free to contact us for technical consultations or inquiries.',
+  contactBtn: 'Inquiry Form',
+};
