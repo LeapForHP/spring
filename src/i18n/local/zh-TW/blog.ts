@@ -1,0 +1,16 @@
+export const blog = {
+  title: '彈簧部落格',
+  subtitle: '為您提供彈簧相關技術資訊與小松發條的日常動態',
+  recommended: '推薦文章',
+  latest: '最新文章',
+  popularRanking: '熱門文章排行榜',
+  categories: '文章分類',
+  searchPlaceholder: '請輸入關鍵字...',
+  noResults: '找不到相關文章。',
+  share: '分享這篇文章',
+  backToList: '返回部落格列表',
+  readMore: '閱讀更多',
+  contactTitle: '聯絡我們',
+  contactDesc: '如有任何技術諮詢或需求，歡迎隨時與我們聯繫。',
+  contactBtn: '聯絡表單',
+};

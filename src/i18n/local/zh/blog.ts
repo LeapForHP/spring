@@ -1,0 +1,16 @@
+export const blog = {
+  title: '弹簧博客',
+  subtitle: '为您带来弹簧技术信息及小松发条的日常动态',
+  recommended: '推荐文章',
+  latest: '最新文章',
+  popularRanking: '热门文章排行',
+  categories: '文章分类',
+  searchPlaceholder: '请输入关键词...',
+  noResults: '未找到相关文章。',
+  share: '分享这篇文章',
+  backToList: '返回博客列表',
+  readMore: '阅读更多',
+  contactTitle: '联系我们',
+  contactDesc: '如有任何技术疑问或需求，欢迎随时向我们咨询。',
+  contactBtn: '在线咨询表单',
+};

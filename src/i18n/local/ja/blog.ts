@@ -1,0 +1,16 @@
+export const blog = {
+  title: 'バネブログ',
+  subtitle: 'ばねに関する技術情報や、会社の日常をお届けします',
+  recommended: 'おすすめ記事',
+  latest: '新着記事',
+  popularRanking: '人気記事ランキング',
+  categories: 'カテゴリー',
+  searchPlaceholder: 'キーワードを入力...',
+  noResults: '記事が見つかりませんでした。',
+  share: 'この記事をシェアする',
+  backToList: 'ブログ一覧に戻る',
+  readMore: '続きを読む',
+  contactTitle: 'お問い合わせ',
+  contactDesc: '技術的なご相談など、お気軽にお問い合わせください。',
+  contactBtn: 'お問い合わせフォーム',
+};
