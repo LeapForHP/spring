@@ -1,4 +1,5 @@
 import { post01 } from './posts/post01';
+import { post02 } from './posts/post02';
 
 // 言語コードの型定義
 export type LangCode = 'ja' | 'en' | 'zh' | 'zh-TW';
@@ -24,6 +25,7 @@ export type BlogPost = {
 
 export const BLOG_POSTS: BlogPost[] = [
   post01,
+  post02,
 ];
 
 // カテゴリー名（繁体字をネイティブ表記に修正）
