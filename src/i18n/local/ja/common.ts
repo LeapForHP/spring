@@ -4,6 +4,7 @@ export const common = {
   slogan: 'きめ細かな発想',
   productInfo: '製品紹介',
   companyProfile: '会社紹介',
+  blog: 'ブログ',
   contact: 'お問い合わせ',
   recruit: '採用情報',
   news: '最新情報',

@@ -4,6 +4,7 @@ export const common = {
     slogan: '精細的構思',
     productInfo: '產品介紹',
     companyProfile: '公司介紹',
+    blog: '部落格',
     contact: '聯絡我們',
     recruit: '招募資訊',
     news: '最新消息',
