@@ -4,6 +4,7 @@ export const common = {
   slogan: 'Delicate Design & Reliable Quality',
   productInfo: 'Products & Applications',
   companyProfile: 'Company Profile',
+  blog: 'Blog',
   contact: 'Contact Us',
   recruit: 'Careers & Recruitment',
   news: 'News & Updates',
