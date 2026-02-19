@@ -3,6 +3,7 @@ import { post02 } from './posts/post02';
 import { post03 } from './posts/post03';
 import { post04 } from './posts/post04';
 import { post05 } from './posts/post05';
+import { post06 } from './posts/post06';
 
 // 言語コードの型定義
 export type LangCode = 'ja' | 'en' | 'zh' | 'zh-TW';
@@ -32,6 +33,7 @@ export const BLOG_POSTS: BlogPost[] = [
   post03,
   post04,
   post05,
+  post06,
 ];
 
 // カテゴリー名（繁体字をネイティブ表記に修正）
