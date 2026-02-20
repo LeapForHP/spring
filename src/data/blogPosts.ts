@@ -1,17 +1,10 @@
-import { post01 } from './posts/post01';
-import { post02 } from './posts/post02';
-import { post03 } from './posts/post03';
-import { post04 } from './posts/post04';
-import { post05 } from './posts/post05';
-import { post06 } from './posts/post06';
-
 // 言語コードの型定義
 export type LangCode = 'ja' | 'en' | 'zh' | 'zh-TW';
 
 // 言語ごとのテキストを保持する型
 export type LocalizedString = Record<LangCode, string>;
 
-export type BlogSection = 
+export type BlogSection =
   | { type: 'heading'; text: LocalizedString }
   | { type: 'text'; text: LocalizedString }
   | { type: 'image'; url: string; alt?: string };
@@ -27,14 +20,16 @@ export type BlogPost = {
   views: number;
 };
 
-export const BLOG_POSTS: BlogPost[] = [
-  post01,
-  post02,
-  post03,
-  post04,
-  post05,
-  post06,
-];
+// posts/ ディレクトリ内の全ファイルを自動読み込み
+// 新しい記事ファイルを追加するだけで自動的に反映される
+const modules = import.meta.glob<Record<string, BlogPost>>(
+  './posts/post*.ts',
+  { eager: true }
+);
+
+export const BLOG_POSTS: BlogPost[] = Object.values(modules)
+  .flatMap((mod) => Object.values(mod))
+  .sort((a, b) => a.id - b.id);
 
 // カテゴリー名（繁体字をネイティブ表記に修正）
 export const CATEGORIES: LocalizedString[] = [
